@@ -1,0 +1,18 @@
+<h1>Manager Login</h1>
+
+<div class="container">
+    <b>Email</b>
+    <input type="text" placeholder="Enter Email" name="email" [(ngModel)]="email">
+    <b>Password</b>
+    <input type="password" placeholder="Enter Password" name="password" [(ngModel)]="password">
+    <button (click)="managerLogin()" class="registerbtn">Login</button>
+</div>
+
+<div class="alert alert-warning" *ngIf = 'invalidLogin'>{{errorMsg}} </div>
+
+
+
+<!-- <div class="container">
+    <button (click)="managerSignIn()">SignUp</button>
+</div> -->
+

@@ -1,0 +1,16 @@
+<header>
+    <nav class="navbar navabr-expand-md navbar-dark bg-dark">
+        <div>
+            <a href="http://localhost:4200/" class="navbar-brand">Mind Bowser</a>
+
+        </div>
+          
+            
+                    <a *ngIf="authenticatedService.isManagerLoggedIn()"  routerLink="/home" class="nav-link">Home</a>
+                     <a *ngIf="!authenticatedService.isManagerLoggedIn()" routerLink="/login" class="nav-link">Login</a>
+                    <a *ngIf="authenticatedService.isManagerLoggedIn()"  routerLink="/logout" class="nav-link">Logout</a>
+          
+                       
+     </nav>
+</header>
+
